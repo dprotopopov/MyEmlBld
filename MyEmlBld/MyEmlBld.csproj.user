@@ -3,10 +3,10 @@
   <PropertyGroup>
     <PublishUrlHistory>ftp://proto%40protopopov.ru/public_html/myemlbld/|ftp://proto%40rba-design.ru/public_html/myemlbld/|ftp://proto%40rba-design.ru/public_html/my/|publish\</PublishUrlHistory>
     <InstallUrlHistory>http://protopopov.ru/myemlbld/|http://rba-design.ru/~proto/myemlbld/|http://rba-design.ru/myemlbld/</InstallUrlHistory>
-    <SupportUrlHistory>http://rba-design.ru/~proto/myemlbld/|http://rba-design.ru/myemlbld/</SupportUrlHistory>
+    <SupportUrlHistory>http://protopopov.ru/myemlbld/|http://rba-design.ru/~proto/myemlbld/|http://rba-design.ru/myemlbld/</SupportUrlHistory>
     <UpdateUrlHistory>http://rba-design.ru/~proto/myemlbld/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory>http://rba-design.ru/~proto/myemlbld/|http://rba-design.ru/myemlbld/</ErrorReportUrlHistory>
+    <ErrorReportUrlHistory>http://protopopov.ru/myemlbld/|http://rba-design.ru/~proto/myemlbld/|http://rba-design.ru/myemlbld/</ErrorReportUrlHistory>
     <FallbackCulture>ru-RU</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>

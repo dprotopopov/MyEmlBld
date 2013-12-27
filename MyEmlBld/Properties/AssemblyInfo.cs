@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("My Emails Builder")]
+[assembly: AssemblyTitle("My Email Builder")]
 [assembly: AssemblyDescription("Free Emals List Generator")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RBA DESIGN INTERNATIONAL LLC")]
-[assembly: AssemblyProduct("My Emails Builder")]
+[assembly: AssemblyProduct("My Email Builder")]
 [assembly: AssemblyCopyright("Copyright © RBA DESIGN INTERNATIONAL LLC 2013")]
 [assembly: AssemblyTrademark("All rights reserved")]
 [assembly: AssemblyCulture("")]
