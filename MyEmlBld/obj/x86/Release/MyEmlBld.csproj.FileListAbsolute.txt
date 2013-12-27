@@ -1,0 +1,16 @@
+D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Emails Builder.exe.config
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\Interop.SHDocVw.dll
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.csproj.ResolveComReference.cache
+D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Emails Builder.exe.manifest
+D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Emails Builder.application
+D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Emails Builder.exe
+D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Emails Builder.pdb
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.AboutBox1.resources
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.MailForm.resources
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.Properties.Resources.resources
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.csproj.GenerateResource.Cache
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Emails Builder.exe.licenses
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Emails Builder.exe.manifest
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Emails Builder.application
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Emails Builder.exe
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Emails Builder.pdb
