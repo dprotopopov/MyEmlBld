@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MyEmlBld
 {
-    partial class AboutBox1 : Form
+    partial class AboutBox1 : DevExpress.XtraEditors.XtraForm
     {
         public AboutBox1()
         {

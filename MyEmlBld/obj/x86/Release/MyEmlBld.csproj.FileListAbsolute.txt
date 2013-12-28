@@ -15,3 +15,4 @@ D:\Projects\MyEmlBld\MyEmlBld\bin\Release\My Email Builder.application
 D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Email Builder.TrustInfo.xml
 D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Email Builder.exe.manifest
 D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\My Email Builder.application
+D:\Projects\MyEmlBld\MyEmlBld\obj\x86\Release\MyEmlBld.csprojResolveAssemblyReference.cache
