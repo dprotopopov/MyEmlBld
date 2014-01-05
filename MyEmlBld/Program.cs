@@ -17,7 +17,7 @@ namespace MyEmlBld
             Application.SetCompatibleTextRenderingDefault(false);
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.LookAndFeel.LookAndFeelHelper.ForceDefaultLookAndFeelChanged();
-            Application.Run(new MailForm());
+            Application.Run(new MainForm());
         }
     }
 }

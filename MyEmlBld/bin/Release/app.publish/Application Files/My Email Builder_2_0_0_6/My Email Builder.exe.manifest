@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="My Email Builder.exe" version="2.0.0.5" publicKeyToken="aea50de867c074c9" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="My Email Builder.exe" version="2.0.0.6" publicKeyToken="aea50de867c074c9" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="My Email Builder" version="2.0.0.0" publicKeyToken="AEA50DE867C074C9" language="neutral" processorArchitecture="x86" />
@@ -329,17 +329,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="My Email Builder.exe" size="91136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="My Email Builder.exe" size="73216">
       <assemblyIdentity name="My Email Builder" version="2.0.0.0" publicKeyToken="AEA50DE867C074C9" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>92Tll7HP83gnNenLU+w25XpW4bxCRmmseqRwKAeodmA=</dsig:DigestValue>
+        <dsig:DigestValue>1k1Dym9S9n2SS0sjt8fKFEvCRQnm0ww1LLF5d0GLm7I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="domains.txt" size="16220">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>snrS1dUP0jNgI06Wcp2420mS5GCkew4xiD1d7+WeVGI=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="My Email Builder.exe.config" size="144">
     <hash>
       <dsig:Transforms>
@@ -347,6 +356,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>jLCHdLm7v47ACsSCc72IOp8bA051ZvlIJCmYB91hk5o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="users.txt" size="63">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HP/HuFlN7rPJfbKFgeytHF8il4Ili4svIO0v7sbWv6s=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
@@ -361,4 +379,4 @@
       <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=OVERNIGHT\User" issuerKeyHash="c7a0482e029a289f2fcc85a55a169ad2b779ad1f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CT/OIHc0Dki9Q0wvSBTsqq1aN871+8QP0OklzkebW1Q=</DigestValue></Reference></SignedInfo><SignatureValue>dAUAYXQEENBreY4hSijSt3xZfKDZ5PJMaJq3pUrTijlC3PWRTzYLh22C7mc6tCpj2XkZ0FBdmYq4rQicQFmt0wgzuzS+jl80kURE5TwWg54kUErKSjZRiZZDIr+5I++VBZlKm0OoujyUKLqIjmBKfPxaz2ukr80xlamANZdRDEg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="545b9b47ce25e9d00fc4fbf5ce375aadaaec14482f4c43bd480e347720ce3f09" Description="" Url=""><as:assemblyIdentity name="My Email Builder.exe" version="2.0.0.5" publicKeyToken="aea50de867c074c9" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OVERNIGHT\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QsdnTkhUeBKGwKjQ8CkvK9EdnhdO107nAdXIpeBvvyM=</DigestValue></Reference></SignedInfo><SignatureValue>EKUbKp3LPnBatOgQWjGKYCpjFfVSp/IUqA/HRc2i9ubC5FIBQTRTeKR6Wv68d9ecq1/wPdhlA2B35Y4DVH9aTsU0C94tGHpQmXjoWNLGfGM1krye6C8pjqiOuzHohnYL3U1AwK0BVu6S2pMo/wwMEDaWNehT3NgWbXtkodbKv3s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQK8icu63GbalG10OSjekQXzANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATwBWAEUAUgBOAEkARwBIAFQAXABVAHMAZQByMB4XDTEzMTIyNzE2MDMzNFoXDTE0MTIyNzIyMDMzNFowJzElMCMGA1UEAx4cAE8AVgBFAFIATgBJAEcASABUAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCuxw28Vpxi+Foj/HzDuXk/LlnCduEQI+WaLKW2xpDYJVeVLsqTVJWaE5qeJ4u/wduR3QLkqAq3/Sp5RvXVrunIXDdM/uZEboeGH5AzlB29x1AaeW+ncdm2Pz/vCD9QwyCS4XNCRpSedeRXsq/+CS9tWVe09QYmUJUAbn2o1c86ww==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=OVERNIGHT\User" issuerKeyHash="c7a0482e029a289f2fcc85a55a169ad2b779ad1f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VusSZEI9bL8XRKMJ9+XNR0HZoLHsQjKt/4HGtUzEzpA=</DigestValue></Reference></SignedInfo><SignatureValue>Wmzqxl1Eh0hsMIhHTWkGTsk/3y1k07ggyPUVEPmJCMLdVF9htNNF9o5gt1VBsLsN7nj8fPmDAdxnTDgVBvhppqbQBi36K74ksWpuB0z4nlh2GeoRMV3dzhJgargZm0AadRamL5xrNjk3zbbBB3qg7jSHoCtW2i+2m8kAN1fQQQM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="90cec44cb5c681ffad3242ecb1a0d94147cde5f709a34417bf6c3d426412eb56" Description="" Url=""><as:assemblyIdentity name="My Email Builder.exe" version="2.0.0.6" publicKeyToken="aea50de867c074c9" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OVERNIGHT\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ARAR7FSKwfB8stdaMu0ViMlIj84OUa1KoYZXCMR5OJ0=</DigestValue></Reference></SignedInfo><SignatureValue>hKtr7UVvNX/kIurjVZPUYqi9hJsnT7hTf3lLD8CKcm7GDh02cMG3OdLs1IYOQauXMs1uDERZ2TKAnqXB+wFUBPDNc7P3qqqqIhq0kuVvvcuidYa8JIiubAO3lE1KXIauD3FdG3DMB6rWqeEWVpi+D9VsuqS/IDtqeQ1yCuugDP8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQK8icu63GbalG10OSjekQXzANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATwBWAEUAUgBOAEkARwBIAFQAXABVAHMAZQByMB4XDTEzMTIyNzE2MDMzNFoXDTE0MTIyNzIyMDMzNFowJzElMCMGA1UEAx4cAE8AVgBFAFIATgBJAEcASABUAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzMXqLl8cqWK4JnRVMA2hwR79dM7oJBpGXlggbXrLIhOWfaHllTNQk03zNnz8u06X5JbNvmKcJwgu7OW3Kl+X3sVWDwwh2Z+UWqFXUWUBQuynYl3eVjz5Va+huuPkEm4d5N0SC3rpTBuEYsDNfJFXmtARWo+ikWuCLpHM8no09t0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCuxw28Vpxi+Foj/HzDuXk/LlnCduEQI+WaLKW2xpDYJVeVLsqTVJWaE5qeJ4u/wduR3QLkqAq3/Sp5RvXVrunIXDdM/uZEboeGH5AzlB29x1AaeW+ncdm2Pz/vCD9QwyCS4XNCRpSedeRXsq/+CS9tWVe09QYmUJUAbn2o1c86ww==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

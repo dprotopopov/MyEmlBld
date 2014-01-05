@@ -1,40 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
+using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
-using DevExpress.XtraBars.Helpers;
-using DevExpress.XtraBars.Localization;
 
 namespace MyEmlBld
 {
-    public partial class MailForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class MainForm : RibbonForm
     {
-        int _navigatingCountdown = 3;
+        private int _navigatingCountdown = 3;
+        private const String FileDomains = @"domains.txt";
+        private const String FileUsers = @"users.txt";
 
-        public MailForm()
+        public MainForm()
         {
             InitializeComponent();
+            textBoxUsers.Text = File.ReadAllText(FileUsers);
+            textBoxDomains.Text = File.ReadAllText(FileDomains);
         }
 
         private void toolStripBuild_Click(object sender, EventArgs e)
         {
-            this.textBox3.Text = "";
-            foreach (String line1 in this.textBox1.Lines)
+            textBoxResults.Text = "";
+            foreach (String username in textBoxUsers.Lines)
             {
-                line1.Replace(" ", "");
-                if (line1.Length > 0)
+                username.Replace(" ", "");
+                if (username.Length > 0)
                 {
-                    foreach (String line2 in this.textBox2.Lines)
+                    foreach (String domain in textBoxDomains.Lines)
                     {
-                        line2.Replace(" ", "");
-                        if (line2.Length > 0)
+                        domain.Replace(" ", "");
+                        if (domain.Length > 0)
                         {
-                            this.textBox3.AppendText(line1 + "@" + line2 + "\r\n");
+                            textBoxResults.AppendText(username + "@" + domain + "\r\n");
                         }
                     }
                 }
@@ -47,11 +46,8 @@ namespace MyEmlBld
             if (_navigatingCountdown == 0)
             {
                 e.Cancel = true;
-                SHDocVw.InternetExplorer IE = new SHDocVw.InternetExplorer();
-                object Empty = null;
-                String URL = e.Url.ToString();
-                IE.Visible = true;
-                IE.Navigate(URL, ref Empty, ref Empty, ref Empty, ref Empty);
+                String url = e.Url.ToString();
+                Process.Start(url);
             }
         }
 
@@ -62,28 +58,29 @@ namespace MyEmlBld
 
         private void MailForm_Load(object sender, EventArgs e)
         {
-
         }
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void ExitItemClick(object sender, ItemClickEventArgs e)
         {
+            File.WriteAllLines(FileUsers, textBoxUsers.Lines);
+            File.WriteAllLines(FileDomains, textBoxDomains.Lines);
             Close();
         }
 
-        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void BuildItemClick(object sender, ItemClickEventArgs e)
         {
-            this.textBox3.Text = "";
-            foreach (String line1 in this.textBox1.Lines)
+            textBoxResults.Text = "";
+            foreach (String username in textBoxUsers.Lines)
             {
-                line1.Replace(" ", "");
-                if (line1.Length > 0)
+                username.Replace(" ", "");
+                if (username.Length > 0)
                 {
-                    foreach (String line2 in this.textBox2.Lines)
+                    foreach (String domain in textBoxDomains.Lines)
                     {
-                        line2.Replace(" ", "");
-                        if (line2.Length > 0)
+                        domain.Replace(" ", "");
+                        if (domain.Length > 0)
                         {
-                            this.textBox3.AppendText(line1 + "@" + line2 + "\r\n");
+                            textBoxResults.AppendText(username + "@" + domain + "\r\n");
                         }
                     }
                 }
@@ -91,21 +88,15 @@ namespace MyEmlBld
             tabControl1.SelectedIndex = 1;
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void SaveItemClick(object sender, ItemClickEventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(saveFileDialog1.FileName))
-                {
-                    foreach (string line in textBox3.Lines)
-                    {
-                        file.WriteLine(line);
-                    }
-                }
+                File.WriteAllLines(saveFileDialog1.FileName, textBoxResults.Lines);
             }
         }
 
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void AboutItemClick(object sender, ItemClickEventArgs e)
         {
             AboutBox1 dlg = new AboutBox1();
             dlg.ShowDialog();

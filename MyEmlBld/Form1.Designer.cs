@@ -1,6 +1,6 @@
 ﻿namespace MyEmlBld
 {
-    partial class MailForm
+    partial class MainForm
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailForm));
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxUsers = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxDomains = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxResults = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripBuild = new System.Windows.Forms.ToolStripLabel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -55,7 +55,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -94,7 +94,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.webBrowser1);
             this.splitContainer1.Size = new System.Drawing.Size(1046, 501);
-            this.splitContainer1.SplitterDistance = 345;
+            this.splitContainer1.SplitterDistance = 343;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -105,7 +105,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1046, 345);
+            this.panel1.Size = new System.Drawing.Size(1046, 343);
             this.panel1.TabIndex = 2;
             // 
             // tabControl1
@@ -117,7 +117,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1046, 345);
+            this.tabControl1.Size = new System.Drawing.Size(1046, 343);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -127,7 +127,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1038, 316);
+            this.tabPage1.Size = new System.Drawing.Size(1038, 314);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Source";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -146,82 +146,80 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer2.Size = new System.Drawing.Size(1030, 308);
+            this.splitContainer2.Size = new System.Drawing.Size(1030, 306);
             this.splitContainer2.SplitterDistance = 342;
             this.splitContainer2.TabIndex = 0;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxUsers);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(342, 308);
+            this.groupBox1.Size = new System.Drawing.Size(342, 306);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Names";
             // 
-            // textBox1
+            // textBoxUsers
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(4, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox1.Size = new System.Drawing.Size(334, 284);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "pr\r\nreclam\r\nreklam\r\nreklama\r\nzakaz\r\nzakupki\r\ntender\r\ntenders";
+            this.textBoxUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxUsers.Location = new System.Drawing.Point(4, 20);
+            this.textBoxUsers.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUsers.Multiline = true;
+            this.textBoxUsers.Name = "textBoxUsers";
+            this.textBoxUsers.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBoxUsers.Size = new System.Drawing.Size(334, 282);
+            this.textBoxUsers.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBoxDomains);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(684, 308);
+            this.groupBox2.Size = new System.Drawing.Size(684, 306);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Domains";
             // 
-            // textBox2
+            // textBoxDomains
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(4, 20);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(676, 284);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = resources.GetString("textBox2.Text");
+            this.textBoxDomains.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDomains.Location = new System.Drawing.Point(4, 20);
+            this.textBoxDomains.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDomains.Multiline = true;
+            this.textBoxDomains.Name = "textBoxDomains";
+            this.textBoxDomains.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxDomains.Size = new System.Drawing.Size(676, 282);
+            this.textBoxDomains.TabIndex = 0;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBoxResults);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1038, 316);
+            this.tabPage2.Size = new System.Drawing.Size(1038, 314);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Results";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // textBoxResults
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(4, 4);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(1030, 308);
-            this.textBox3.TabIndex = 0;
+            this.textBoxResults.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxResults.Location = new System.Drawing.Point(4, 4);
+            this.textBoxResults.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxResults.Multiline = true;
+            this.textBoxResults.Name = "textBoxResults";
+            this.textBoxResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResults.Size = new System.Drawing.Size(1030, 306);
+            this.textBoxResults.TabIndex = 0;
             // 
             // toolStrip1
             // 
@@ -250,7 +248,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(24, 25);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(1046, 151);
+            this.webBrowser1.Size = new System.Drawing.Size(1046, 153);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://protopopov.ru/myemlbld/advert.php", System.UriKind.Absolute);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
@@ -291,7 +289,7 @@
             this.barButtonItem3.Id = 3;
             this.barButtonItem3.LargeGlyph = global::MyEmlBld.Properties.Resources.recurrence_32x32;
             this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BuildItemClick);
             // 
             // barButtonItem1
             // 
@@ -300,7 +298,7 @@
             this.barButtonItem1.Id = 1;
             this.barButtonItem1.LargeGlyph = global::MyEmlBld.Properties.Resources.save_32x32;
             this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveItemClick);
             // 
             // barButtonItem2
             // 
@@ -309,7 +307,7 @@
             this.barButtonItem2.Id = 2;
             this.barButtonItem2.LargeGlyph = global::MyEmlBld.Properties.Resources.close_32x32;
             this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ExitItemClick);
             // 
             // barButtonItem4
             // 
@@ -321,7 +319,7 @@
             this.barButtonItem4.LargeGlyph = global::MyEmlBld.Properties.Resources.info_32x32;
             this.barButtonItem4.LargeGlyphDisabled = global::MyEmlBld.Properties.Resources.info_32x32;
             this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AboutItemClick);
             // 
             // ribbonPage1
             // 
@@ -362,7 +360,7 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Sharp Plus";
             // 
-            // MailForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -372,7 +370,7 @@
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Default;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MailForm";
+            this.Name = "MainForm";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
@@ -414,11 +412,11 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxUsers;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxDomains;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxResults;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private DevExpress.XtraBars.FormAssistant formAssistant1;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
